@@ -7,13 +7,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <section class="flex justify">
-        <h1>Calculate your BMI</h1>
-        <form action="bmi.php">
-            <label for="weight">Weight (kg):</label>
-            <input type="number" name="weight" id="weight" value="weight">
-            <label for="height">Height (m):</label>
-            <input type="number" name="height" id="height" value="height">
+    <section class="bg-blue-500 m-auto w-full sm:w-[40%] mt-32 p-6 text-center">
+        <h1 class="font-bold text-xl sm:text-2xl text-center">CALCULATE YOUR BMI</h1>
+        <form class="bg-red-600" action="bmi.php">
+            <label for="weight">Weight (kg):</label><br>
+            <input class="px-2 py-1 rounded-md focus-border-none" type="number" name="weight" id="weight" value="weight" placeholder="input weight"><br>
+            <label for="height">Height (m):</label><br>
+            <input type="number" name="height" id="height" value="height" placeholder="input height">
         </form>
     </section>
 </body>
