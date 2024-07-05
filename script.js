@@ -7,3 +7,4 @@ function bmiCalculator(weight, height) {
 }
 
 console.log(bmiCalculator(65, 1.8));
+xx
