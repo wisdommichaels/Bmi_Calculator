@@ -5,18 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A BMI CALCULATOR</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body{
+            background-image: url(./assets/pexels-823sl-2294363.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+    </style>
 </head>
 <body>
-    <section class="bg-blue-500 m-auto w-full sm:w-[40%] sm:mt-32 sm:rounded-md p-6 text-center">
-        <h1 class="font-bold text-xl sm:text-2xl text-center mb-2">CALCULATE YOUR BMI</h1>
-        <form class="bg-red-600 m-auto px-5 w-1/2 py-8 rounded-md text-center" action="bmi.php">
-            <label class="font-bold" for="weight">Weight (kg):</label>
-            <input class="pl-2 py-1 mb-5 mt-1 rounded-md outline-non hover:bg-slate-100 focus:outline-green-400 focus:bg-green-100" type="number" name="weight" id="weight" value="weight" placeholder="input weight">
-            <label class="font-bold" for="height">Height (m):</label>
-            <input class="pl-2 py-1 mb-5 mt-1 rounded-md outline-non hover:bg-slate-100 focus:outline-green-400 focus:bg-green-100" type="number" name="height" id="height" value="height" placeholder="input height">
-            <input class=" bg-green-100 rounded-md px-2 font-bold" type="button" value="Calculate">
+    <div class="flex justify-center items-center m-auto w-full sm:mt-32 sm:rounded-md p-6 text-center">
+        <div class=" backdrop-blur-md pt-5 rounded-md sm:w-[40%] w-full py-6">
+        <h1 class="font-bold text-xl sm:text-2xl text-center mb-2 text-slate-300 sm:text-black">CALCULATE YOUR BMI</h1>
+        <form class=" py-5" action="bmi.php">
+            <label class="font-bold text-[14px]" for="weight">Weight (kg):</label><br>
+            <input class=" py-1 pl-2 mb-5 text-[12px]  mt-1 w-[50%] rounded-md outline-non hover:bg-slate-100 focus:outline-slate-400 focus:bg-slate-100" type="number" name="weight" id="weight" value="weight"><br>
+            <label class="font-bold text-[14px]" for="height">Height (ms):</label><br>
+            <input class="py-1 pl-2 text-[12px] mb-5 mt-1 w-[50%] rounded-md outline-non hover:bg-slate-100 focus:outline-slate-400 focus:bg-slate-100" type="number" name="height" id="height" value="height"><br>
+            <button class=" bg-slate-400 rounded-md px-3 py-1 font-bold">Calculate</button>
+            <div class="bg-white w-[35%] rounded-md pl-2  mt-5 flex m-auto">
+                <h2 class="font-bold text-[14px] py-1">Result:</h2>
+                <div id="result"></div>
+            </div>
         </form>
-        <div class="bg-white rounded-md w-1/2 flex justify-center items-center">hchccdnnio</div>
-    </section>
+        </div>
+    </div>
 </body>
 </html>
