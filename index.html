@@ -16,22 +16,28 @@
     </style>
 </head>
 <body>
-    <div class="flex justify-center items-center m-auto w-full sm:mt-32 sm:rounded-md p-6 text-center">
-        <div class=" backdrop-blur-md pt-5 rounded-md sm:w-[40%] w-full py-6">
-        <h1 class="font-bold text-xl sm:text-2xl text-center mb-2 text-slate-300 sm:text-black">CALCULATE YOUR BMI</h1>
-        <form class=" py-5" action="bmi.php">
-            <div class="sm:flex justify-center items-center mb-5">
-                <label class="font-bold text-[14px]" for="weight">Weight (kg):</label><br>
-                <input class=" py-1 pl-2  text-[12px]  mt-1 w-[50%] rounded-md outline-non hover:bg-slate-100 focus:outline-slate-400 focus:bg-slate-100" type="number" name="weight" id="weight" value="weight"><br>
-            </div>
-            <div class="sm:flex justify-center items-center mb-5">
-                <label class="font-bold text-[14px]" for="height">Height (ms):</label><br>
-                <input class="py-1 pl-2 text-[12px] mt-1 w-[50%] rounded-md outline-non hover:bg-slate-100 focus:outline-slate-400 focus:bg-slate-100" type="number" name="height" id="height" value="height"><br>
-            </div>
+    <div class="flex justify-center items-center m-auto w-full sm:mt-20 sm:rounded-md p-6 text-center">
+        <div class=" backdrop-blur-md pt-5 rounded-md sm:w-[50%] w-full py-6">
+        <h1 class="font-bold text-xl sm:text-2xl text-center mb-2 text-slate-300">CALCULATE YOUR BMI</h1>
+        <form class=" py-5">
+            <label class="font-bold text-[14px]" for="weight">Weight (kg):</label><br>
+            <input class=" py-1 pl-2 mb-5 text-[12px]  mt-1 w-[50%] rounded-md outline-non hover:bg-slate-100 focus:outline-slate-400 focus:bg-slate-100" type="number" name="weight" id="weight" value="weight"><br>
+           
+            
+            <label class="font-bold text-[14px]" for="height">Height (ms):</label><br>
+            <input class="py-1 pl-2 text-[12px] mb-5 mt-1 w-[50%] rounded-md outline-non hover:bg-slate-100 focus:outline-slate-400 focus:bg-slate-100" type="number" name="height" id="height" value="height"><br>
+           
             <button class=" bg-slate-400 rounded-md px-3 py-1 font-bold">Calculate</button>
             <div class="bg-white w-[35%] rounded-md pl-2  mt-5 flex m-auto">
                 <h2 class="font-bold text-[14px] py-1">Result:</h2>
                 <div id="result"></div>
+            </div>
+            <div class=" text-slate-200 leading-8 mt-6 border-slate-400 rounded-md sm:w-[70%] w-[80%] m-auto py-2 border drop-shadow-md ">
+                <h2 class="font-bold text-black">BMI Weight Guide</h2>
+                <p>Normal weight <b>~</b> BMI 18.5 to 24.9</p>
+                <p>Underweight <b>~</b> BMI less than 18.5</p>
+                <p>Overweight <b>~</b> BMI 25 to 29.9</p>
+                <p>Obesity <b>~</b> BMI 30 or greater</p>
             </div>
         </form>
         </div>
