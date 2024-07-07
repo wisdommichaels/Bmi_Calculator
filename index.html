@@ -20,17 +20,14 @@
         <div class=" backdrop-blur-md pt-8 rounded-md border-slate-400 border sm:w-[50%] w-full py-6">
         <h1 class="font-bold text-xl sm:text-2xl text-center mb-2 text-slate-300">CALCULATE YOUR BMI</h1>
         <form class=" py-5">
-            <label class="font-bold text-[14px]" for="weight">Weight (kg):</label><br>
-            <input class=" py-1 pl-2 mb-5 text-[12px]  mt-1 w-[50%] rounded-md outline-non hover:bg-slate-100 focus:outline-slate-400 focus:bg-slate-100" type="number" name="weight" id="weight" value="weight"><br>
-           
-            
-            <label class="font-bold text-[14px]" for="height">Height (ms):</label><br>
-            <input class="py-1 pl-2 text-[12px] mb-5 mt-1 w-[50%] rounded-md outline-non hover:bg-slate-100 focus:outline-slate-400 focus:bg-slate-100" type="number" name="height" id="height" value="height"><br>
-           
-            <button id="btn" class=" bg-slate-400 rounded-md px-3 py-1 font-bold">Calculate</button>
-            <div class="bg-white w-[35%] rounded-md pl-2  mt-5 flex m-auto">
-                <h2 class="font-bold text-[14px] py-1">BMI Result:</h2>
-                <div id="result"></div>
+            <label class="font-bold text-[14px] text-slate-200 sm:text-black" for="weight">Weight (kg):</label><br>
+            <input class=" py-1 pl-2 mb-5 text-[12px] border border-slate-600  mt-1 w-[50%] rounded-md outline-non hover:bg-slate-100 focus:outline-slate-400 focus:bg-slate-100" type="number" name="weight" id="weight" value="weight"><br>
+            <label class="font-bold text-[14px] text-slate-200 sm:text-black" for="height">Height (cm):</label><br>
+            <input class="py-1 pl-2 text-[12px] border border-slate-600 mb-5 mt-1 w-[50%] rounded-md outline-non hover:bg-slate-100 focus:outline-slate-400 focus:bg-slate-100" type="number" name="height" id="height" value="height"><br>
+            <button type="submit" class=" bg-slate-400 rounded-md px-3 py-1 font-bold">Calculate</button>
+            <div class="bg-white w-[50%] rounded-md pl-2  mt-5 flex m-auto">
+                <h2 class="font-bold text-[14px] py-1"> Result:</h2>
+                <div class="flex items-center pl-2" id="results"></div>
             </div>
             <div class=" text-slate-200 leading-8 mt-6 border-slate-400 rounded-md sm:w-[70%] w-[80%] m-auto py-2 border drop-shadow-md ">
                 <h2 class="font-bold text-black">BMI Weight Guide</h2>
@@ -42,5 +39,6 @@
         </form>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
